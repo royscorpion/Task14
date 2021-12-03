@@ -14,9 +14,9 @@ namespace Task14
         static void Main(string[] args)
         {
             Cat cat = new Cat();
-            Console.WriteLine(cat.ShowInfo());
+            cat.ShowInfo();
             Dog dog = new Dog();
-            Console.WriteLine(dog.ShowInfo());
+            dog.ShowInfo();
 
             Console.ReadKey();
         }
@@ -30,7 +30,8 @@ namespace Task14
         public abstract string Say();
         public string ShowInfo()
         {
-            return (Name + " говорит: \"" + Say() + "\"");
+            Console.WriteLine(Name + " говорит: \"" + Say() + "\"");
+            return "";
         }
     }
 
